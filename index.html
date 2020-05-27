@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piratebay|Login</title>
+    <link rel="stylesheet" href="assets/bootstrap-3.3.7/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+
+    <div>
+        <div class="header-login">
+        <h1 class="titulo-empresa">PIRATEBAY - LOGIN</h1>
+        <img src="imgs/logo.jpg" class="logo-empresa" alt="Logo">
+        </div>
+        <div class="body-login">
+            <h3 class="titulo-form">INICIAR SESIÓN</h3>
+                <div class="input-group col-md-12">
+                    <input type="text" class="form-control" name="username" id="username" autofocus value="" placeholder="Usuario" required>
+                    <span class="glyphicon glyphicon-user form-control-feedback"></span>
+                </div>
+                <br>
+                <div class="input-group col-md-12">
+                    <input type="password" class="form-control" name="password" id="password" placeholder="Contraseña" required>
+                    <span class="glyphicon glyphicon-lock form-control-feedback"></span>
+                </div>
+                <br>
+                <div id="mensaje" class="oculto">Mensaje de prueba</div><br>
+                <div class="form-group" style="display:flex; justify-content: center;">
+                    <button type="button" id="btnAcceder" class="btn btn-danger">Acceder</button>
+                </div>
+        </div>
+    </div>
+
+    <!-- SCRIPTS -->
+    <script src="assets/jquery-3.2.1.js"></script>
+    <script src="assets/bootstrap-3.3.7/dist/js/bootstrap.js"></script>
+    <script src="js/login.js"></script>
+</body>
+</html>
