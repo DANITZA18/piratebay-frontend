@@ -1,0 +1,18 @@
+server:
+  port: 8008
+
+spring:
+  application:
+    name: piratebay-backend
+  datasource:
+    platform: postgres
+    url: jdbc:postgresql://localhost:5432/piratebay_db
+    username: postgres
+    password: postgres
+
+piratebay:
+  security:
+    salt: qwertyuiop
+    secretJwt: 1234567890
+
+# 123456qwertyuiop
