@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Piratebay | Home</title>
     <link rel="stylesheet" href="assets/bootstrap-3.3.7/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/fontawesome/css/all.css">
     <link rel="stylesheet" href="css/miEstilo.css">
+    <script src="js/valida.js"></script>
 </head>
 <body>
     <div class="container">
@@ -16,10 +18,18 @@
                 <div class="panel panel-default">
                     <div class="panel-heading">
                         PIRATEBAY
-                        <a href="index.html" class="pull-right">Salir</a>
                     </div>
                     <div class="panel-body">
                         <div class="alert alert-success">Bienvenido a <b>PIRATEBAY</b></div>
+                        <div class="col-md-4">
+                            <a href="usuarios.html" class="botones"><i class="fa fa-users fa-5x"></i><span>Gestionar Usuarios</span></a>
+                        </div>
+                        <div class="col-md-4">
+                            <a href="" class="botones"><i class="fa fa-cubes fa-5x"></i><span>Gestionar Productos</span></a>
+                        </div>
+                        <div class="col-md-4">
+                            <a href="" id="btnSalir" class="botones"><i class="fa fa-power-off fa-5x"></i><span>Salir</span></a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -28,6 +38,6 @@
     
     <script src="assets/jquery-3.2.1.js"></script>
     <script src="assets/bootstrap-3.3.7/dist/js/bootstrap.js"></script>
-    <script src="js/login.js"></script>
+    <script src="js/paginas.js"></script>
 </body>
 </html>
