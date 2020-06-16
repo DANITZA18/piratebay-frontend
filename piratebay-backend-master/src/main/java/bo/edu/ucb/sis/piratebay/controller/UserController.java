@@ -29,6 +29,7 @@ public class UserController {
         this.userBl = userBl;
     }
 
+    @CrossOrigin(origins = "*")
     @RequestMapping(method = RequestMethod.GET,
             produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<List<UserModel>> findAllActives(@RequestHeader("Authorization") String authorization) { // bearer asdasdasdasd

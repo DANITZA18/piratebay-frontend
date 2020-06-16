@@ -32,6 +32,7 @@ public class SecurityController {
         this.securityBl = securityBl;
     }
 
+    @CrossOrigin(origins = "*")
     @RequestMapping(value = "login", method = RequestMethod.POST, produces = MediaType.APPLICATION_JSON_VALUE,  consumes = MediaType.APPLICATION_JSON_VALUE )
     public ResponseEntity<Map<String, Object>> authenticate(@RequestBody CredentialModel credentialsModel) {
 
@@ -50,6 +51,7 @@ public class SecurityController {
         }
     }
 
+    @CrossOrigin(origins = "*")
     @RequestMapping(value = "refresh", method = RequestMethod.POST, produces = MediaType.APPLICATION_JSON_VALUE,  consumes = MediaType.APPLICATION_JSON_VALUE )
     public ResponseEntity<Map<String, Object>> authenticate(@RequestBody TokenRefreshModel tokenRefreshModel) {
         Map <String,String> tokens = securityBl.refresh(tokenRefreshModel);
