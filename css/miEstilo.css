@@ -6,3 +6,39 @@
 body{
     background:rgb(219, 219, 219);
 }
+
+.botones{
+    color:white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0px;
+    border:solid 2px;
+    width: 100%;
+    background:blue;
+    text-decoration: none!important;
+    padding: 5px;
+}
+
+.botones:hover,:focus{
+    color:white;
+    background:rgb(1, 1, 134);
+}
+
+.navegacion{
+    display: flex;
+    color:gray;
+}
+
+.navegacion > .link{
+    margin-right: 5px;
+}
+.navegacion > .link a{
+    color:rgb(65, 65, 65);
+}
+
+.navegacion > .link a:focus{
+    background:transparent;
+    color:rgb(107, 107, 107);
+}
