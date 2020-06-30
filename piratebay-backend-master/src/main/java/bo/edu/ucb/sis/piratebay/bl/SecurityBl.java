@@ -52,7 +52,7 @@ public class SecurityBl {
         Integer userId = userDao.findUserIdByUsernameAndPassword(username, sha256hex);
         if (userId != null ) {
             result.put("authentication", generateJWT(userId, 2, "AUTHN", userDao.findAllFeatureCodeByUserId(userId)));
-            result.put("refresh", generateJWT(userId, 6, "REFRESH", null));
+            result.put("refresh", generateJWT(userId, 1, "REFRESH", null));
             return result;
         } else {
             return null;
