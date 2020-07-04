@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piratebay | Productos</title>
+    <link rel="stylesheet" href="assets/bootstrap-3.3.7/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/fontawesome/css/all.css">
+    <link rel="stylesheet" href="css/miEstilo.css">
+    <link rel="stylesheet" href="css/productos.css">
+    <script src="js/valida.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h4>Almacenes - <span id="nom_almacen"></span></h4>
+            </div>  
+        </div>
+
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        PIRATEBAY
+                        <div class="navegacion pull-right">
+                            <div class="link">
+                                <a href="Home.html">Menú principal</a>
+                            </div>
+                            <div class="link">/ <a href="almacenes.html">Almacenes</a></div>
+                            <div class="seccion">/ Productos</div>
+                        </div>
+                    </div>
+                    <div class="panel-body">
+                        <h3>Lista de productos</h3>
+                        <div class="form-group pull-right">
+                            Buscar: <input type="text" class="" id="texto">
+                        </div>
+                        <table class="table table-striped table-hovered">
+                            <thead>
+                                <tr>
+                                    <th>Código</th>
+                                    <th>Título</th>
+                                    <th>Formato</th>
+                                    <th>Fecha de creación</th>
+                                    <th>Proveedor</th>
+                                    <th>Cantidad</th>
+                                </tr>
+                            </thead>
+                            <tbody id="contenedor">
+
+                            </tbody>
+                        </table>
+                        <!-- <button class="btn btn-primary" id="btnRecargaDatos">Actualizar datos</button> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="assets/jquery-3.2.1.js"></script>
+    <script src="assets/bootstrap-3.3.7/dist/js/bootstrap.js"></script>
+    <script src="js/config.js"></script>
+    <script src="js/login.js"></script>
+    <script src="js/paginas.js"></script>
+    <script src="js/productos.js"></script>
+</body>
+</html>
