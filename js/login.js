@@ -28,7 +28,7 @@ function iniciarSesion()
         $.ajax({
             type: "POST",
             data: JSON.stringify(credentialsModel),
-            url: "http://localhost:8008/api/v1/security/login",
+            url: url_base+"/api/v1/security/login",
             contentType: 'application/json',
             success: function (response) {
                 // GUARDAR EL TOKEN Y REFRESH EN EL LOCALSTORAGE
@@ -54,7 +54,7 @@ function usarRefresh()
     $.ajax({
         type: "POST",
         data: JSON.stringify({'refreshToken':localStorage.piratebay_refresh}),
-        url: "http://localhost:8008/api/v1/security/refresh",
+        url: url_base+"/api/v1/security/refresh",
         contentType: 'application/json',
         success: function (response) {
             localStorage.piratebay_token =  response.authentication;
