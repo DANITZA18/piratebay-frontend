@@ -1,5 +1,6 @@
 $(document).ready(function () {
     $('#btnSalir').click(cierraSesion);
+    iniciaTooltip();
 });
 
 function cierraSesion(e)
@@ -8,4 +9,10 @@ function cierraSesion(e)
     localStorage.removeItem('piratebay_token');
     localStorage.removeItem('piratebay_refresh');
     location.href = 'index.html';
+}
+
+function iniciaTooltip()
+{
+    $('[data-toggle="tooltip"]').tooltip()
+
 }
