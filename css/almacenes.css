@@ -1,0 +1,26 @@
+.almacen{
+    cursor: pointer;
+    color:white;
+    background: black;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 180px;
+    border: solid 1px;
+}
+
+.almacen:hover{
+    color:rgb(17, 227, 255);
+}
+
+.almacen .imagen{
+    padding-top: 15px;
+}
+
+.almacen .nombre{
+    padding: 15px;
+    font-weight: bold;
+    font-size: 1.3em;
+}
