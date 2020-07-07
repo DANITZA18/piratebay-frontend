@@ -42,3 +42,7 @@ body{
     background:transparent;
     color:rgb(107, 107, 107);
 }
+
+.oculto{
+    display: none!important;
+}
