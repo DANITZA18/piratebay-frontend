@@ -1,0 +1,9 @@
+#contenedor tr:hover{
+    cursor: pointer;
+    background:rgb(181, 236, 250);
+}
+
+input:focus{
+    background:white;
+    color:black;
+}
